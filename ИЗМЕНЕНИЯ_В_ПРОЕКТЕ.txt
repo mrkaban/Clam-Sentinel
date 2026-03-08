@@ -1,0 +1,11 @@
+ВЕРСИЯ ПРОЕКТА: 1.23
+
+1. ClamSentinel.manifest (новый файл)
+   - XML манифест для Windows Vista/7/8/10/11
+   - Настройка UAC: requestedExecutionLevel level="asInvoker"
+   - Поддержка DPI: dpiAware="true"
+   - Совместимость с Windows 10 и 11 (не тестировал)
+
+2. ClamSentinel.rc (новый файл)
+   - Ссылка на файл манифеста: 1 24 "ClamSentinel.manifest"
+   - Используется для добавления манифеста в .exe файл
